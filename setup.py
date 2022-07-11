@@ -14,11 +14,13 @@ setup(
     py_modules=['ocam'],
     package_dir={'': 'ocam'},
     python_requires='>=3.7',
-    install_requires=[],
+    install_requires=[
+        'requests',
+        'argparse'
+    ],
     extras_require = {
         'dev': [
             'pytest>=3.7',
-            'requests'
         ],
     },
 )
